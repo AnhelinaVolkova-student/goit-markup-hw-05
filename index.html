@@ -813,31 +813,32 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label class="modal-label" for="username"> Name </label>
           <div class="modal-input-border">
-            <svg class="icon icon-modal" height="24" width="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-            <input
-              class="modal-input"
-              type="text"
-              name="username"
-              id="username"
-            />
+            <label class="modal-label">
+              Name
+              <svg class="icon icon-modal" height="24" width="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input class="modal-input" type="text" name="username" />
+            </label>
           </div>
-          <label class="modal-label" for="phone"> Phone </label>
           <div class="modal-input-border">
-            <svg class="icon icon-modal" height="24" width="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            <input class="modal-input" type="tel" name="phone" id="phone" />
+            <label class="modal-label">
+              Phone
+              <svg class="icon icon-modal" height="24" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input class="modal-input" type="tel" name="phone" />
+            </label>
           </div>
-          <label class="modal-label" for="email"> Email </label>
           <div class="modal-input-border">
-            <svg class="icon icon-modal" height="24" width="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            <input class="modal-input" type="email" name="mail" id="email" />
+            <label class="modal-label">
+              Email
+              <svg class="icon icon-modal" height="24" width="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input class="modal-input" type="email" name="mail" />
+            </label>
           </div>
 
           <label class="modal-label">
@@ -849,6 +850,31 @@
               placeholder="Text input"
             ></textarea>
           </label>
+
+          <div class="checkbox-box">
+            <label class="modal-label" for="checkbox">
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="#PrivacyPolicy">Privacy Policy</a>
+              </span>
+              <span>
+                <input
+                  class="checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="checkbox"
+                  name="modal-checkbox"
+                  value="agree"
+                />
+                <svg class="icon icon-default-chbox" width="16" height="16">
+                  <use href="./images/icons.svg#icon-default-chbox"></use>
+                </svg>
+                <svg class="icon icon-click-chbox" height="16" width="16">
+                  <use href="./images/icons.svg#icon-click-chbox"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <!--
           <div class="checkbox-box">
             <div class="checkbox-icons">
               <input
@@ -865,17 +891,14 @@
                 <use href="./images/icons.svg#icon-click-chbox"></use>
               </svg>
             </div>
-            <!--Текст після чекбоксу в макеті має line-height: 1.17; 
-            а висота посилання змінена на 1.33, що видно у коді .modal-link
-            Будь ласка, перевірте цей пункт уважніше-->
-            <label class="modal-label" for="checkbox">
+            <label class="modal-label texta" for="checkbox">
               I accept the terms and conditions of the
               <a class="modal-link" href="#PrivacyPolicy">Privacy Policy</a>
             </label>
           </div>
           <div class="modal-button-box">
             <button class="modal-button" type="submit">Send</button>
-          </div>
+          </div>-->
         </form>
       </div>
     </div>

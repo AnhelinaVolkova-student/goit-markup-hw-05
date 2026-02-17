@@ -741,6 +741,7 @@ header .container{
 .checkbox-box{
     display: flex;
     position: relative;
+    margin-bottom: 16px;
 }
 
 .checkbox-text {

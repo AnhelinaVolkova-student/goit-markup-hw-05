@@ -802,7 +802,7 @@
     </footer>
 
     <!--Modal window-->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="icon icon-modal-close" height="8" width="8">
@@ -852,12 +852,9 @@
           </label>
 
           <div class="checkbox-box">
-            <label class="modal-label" for="checkbox">
-              <span class="checkbox-text">
-                I accept the terms and conditions of the
-                <a class="modal-link" href="#PrivacyPolicy">Privacy Policy</a>
-              </span>
-              <span>
+            <label class="modal-label checkbox-label" for="checkbox">
+              <!-- Контейнер під іконку -->
+              <span class="checkbox-icon-wrap">
                 <input
                   class="checkbox-input visually-hidden"
                   type="checkbox"
@@ -865,12 +862,20 @@
                   name="modal-checkbox"
                   value="agree"
                 />
+
                 <svg class="icon icon-default-chbox" width="16" height="16">
                   <use href="./images/icons.svg#icon-default-chbox"></use>
                 </svg>
-                <svg class="icon icon-click-chbox" height="16" width="16">
+
+                <svg class="icon icon-click-chbox" width="16" height="16">
                   <use href="./images/icons.svg#icon-click-chbox"></use>
                 </svg>
+              </span>
+
+              <!-- Текст -->
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="#PrivacyPolicy">Privacy Policy</a>
               </span>
             </label>
           </div>
